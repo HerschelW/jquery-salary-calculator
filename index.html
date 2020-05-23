@@ -1,0 +1,49 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="jQuery.js"></script>
+      <script src="script.js" defer></script>
+      <link rel="stylesheet" href="style.css" />
+      <title>Salary Calculator</title>
+   </head>
+   <body>
+      <header>
+         <h1>Salary Calculator</h1>
+      </header>
+      <div class="content">
+         <form action="POST">
+            <input id="firstName" type="text" placeholder="Last Name" />
+            <input id="lastName" type="text" placeholder="Last Name" />
+            <input id="employeeID" type="text" placeholder="ID" />
+            <input id="employeeTitle" type="text" placeholder="Title" />
+            <input
+               id="employeeSalary"
+               type="text"
+               placeholder="Annual Salary"
+            />
+            <input id="employeeAdd" type="button" value="Add Employee" />
+         </form>
+         <table>
+            <thead>
+               <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>ID</th>
+                  <th>Title</th>
+                  <th>Annual Salary</th>
+                  <th>Delete</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="employeeRow">
+                  <td>Example Cohort</td>
+                  <td>20</td>
+                  <td>Tier 1</td>
+                  <td><button class="myBtn">Delete</button></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>
