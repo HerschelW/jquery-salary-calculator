@@ -1,0 +1,29 @@
+{
+  "name": "jquery-salary-calculator",
+  "version": "1.0.0",
+  "description": "Week 7 Weekend Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HerschelW/jquery-salary-calculator.git"
+  },
+  "keywords": [
+    "Salary",
+    "Calculator"
+  ],
+  "author": "Kent Worthington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HerschelW/jquery-salary-calculator/issues"
+  },
+  "homepage": "https://github.com/HerschelW/jquery-salary-calculator#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
