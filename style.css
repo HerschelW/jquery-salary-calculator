@@ -4,14 +4,14 @@ body {
 }
 
 table {
-   width: 90%;
+   width: 100%;
    border: 1px solid black;
    border-radius: 1%;
    border-collapse: collapse;
 }
 
 form {
-   width: 90%;
+   width: 100%;
 }
 
 input {
@@ -30,7 +30,7 @@ thead {
 
 td {
    text-align: center;
-   background-color: rgb(255, 213, 213);
+   background-color: rgb(213, 224, 255);
    border-left: 1px solid black;
    border-right: 1px solid black;
    border-bottom: 1px solid black;
