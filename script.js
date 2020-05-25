@@ -107,7 +107,7 @@ $("#addButton").on("click", function () {
       eSalary === ""
    ) {
       alert("Please fill out all inputs!");
-   } else if (typeof eSalary != "number") {
+   } else if (isNaN(eSalary) == true || isNaN(eID) == true) {
       alert("Annual Salary and ID must be numbers!");
    } else {
       employees.push({
