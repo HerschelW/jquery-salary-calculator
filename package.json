@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/HerschelW/jquery-salary-calculator#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
   },
   "dependencies": {
     "express": "^4.17.1"

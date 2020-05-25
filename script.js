@@ -94,9 +94,11 @@ function setup() {
 $("#addButton").on("click", function () {
    let fName = $("#firstName").val();
    let lName = $("#lastName").val();
-   let eID = $("#employeeID").val();
+   let eID = Number($("#employeeID").val());
+   console.log(typeof eID);
    let eTitle = $("#employeeTitle").val();
-   let eSalary = parseInt($("#employeeSalary").val());
+   let eSalary = Number($("#employeeSalary").val());
+   console.log(typeof eSalary);
    if (
       fName === "" ||
       lName === "" ||
@@ -105,7 +107,7 @@ $("#addButton").on("click", function () {
       eSalary === ""
    ) {
       alert("Please fill out all inputs!");
-   } else if (eSalary != Number) {
+   } else if (typeof eSalary != "number") {
       alert("Annual Salary and ID must be numbers!");
    } else {
       employees.push({
@@ -168,6 +170,9 @@ function totalMonth() {
       sumVal += someSal;
    }
    totalMonthly = Math.round(sumVal / 12);
+   if (totalMonthly > 20000) {
+      $("#total").addClass(".red-background");
+   }
    $("#total").text("Total Monthly: $" + totalMonthly);
 }
 

@@ -35,3 +35,7 @@ td {
    border-right: 1px solid black;
    border-bottom: 1px solid black;
 }
+
+.red-background {
+   background-color: rgb(255, 0, 0);
+}
