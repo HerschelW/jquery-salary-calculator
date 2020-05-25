@@ -171,7 +171,7 @@ function totalMonth() {
    }
    totalMonthly = Math.round(sumVal / 12);
    if (totalMonthly > 20000) {
-      $("#total").addClass(".red-background");
+      $("#total").css("background-color", "rgb(255, 184, 184)");
    }
    $("#total").text("Total Monthly: $" + totalMonthly);
 }
