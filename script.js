@@ -95,10 +95,8 @@ $("#addButton").on("click", function () {
    let fName = $("#firstName").val();
    let lName = $("#lastName").val();
    let eID = Number($("#employeeID").val());
-   console.log(typeof eID);
    let eTitle = $("#employeeTitle").val();
    let eSalary = Number($("#employeeSalary").val());
-   console.log(typeof eSalary);
    if (
       fName === "" ||
       lName === "" ||
@@ -122,8 +120,6 @@ $("#addButton").on("click", function () {
    clearTable();
    addRow();
    totalMonth();
-
-   console.log(employees);
 });
 
 // Add Row function
@@ -150,8 +146,8 @@ function addRow() {
          let del = $(this).parent();
          del.fadeOut(function () {
             del.remove();
-            totalMonth();
             objRemove();
+            totalMonth();
          });
       });
    });
@@ -161,6 +157,7 @@ $("document").ready(setup);
 
 // add total function
 function totalMonth() {
+   $("#total").css("background-color", "");
    let tables = document.getElementById("tableBody");
    let sumVal = 0;
 
@@ -183,7 +180,6 @@ function objRemove() {
    console.log(tables.rows.length);
    for (let i = 0; i < tables.rows.length; i++) {
       let id = tables.rows[i].cells[2].innerText;
-      console.log(id);
       employees.forEach((element) => {
          if (element.employeeID === id) {
             tempArr.push(element);
@@ -191,5 +187,4 @@ function objRemove() {
       });
    }
    employees = tempArr;
-   console.log(employees);
 }
