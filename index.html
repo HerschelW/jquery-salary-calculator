@@ -4,6 +4,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <script src="jQuery.js" defer></script>
       <script src="script.js" defer></script>
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      />
       <link rel="stylesheet" href="style.css" />
       <title>Salary Calculator</title>
    </head>
@@ -12,8 +16,15 @@
          <h1>Salary Calculator</h1>
       </header>
       <div class="content">
-         <form id="inputForm" action="/" method="POST" autocomplete="off">
+         <form
+            class="form-inline"
+            id="inputForm"
+            action="/"
+            method="POST"
+            autocomplete="off"
+         >
             <input
+               class="form-control"
                id="firstName"
                type="text"
                placeholder="First Name"
@@ -21,28 +32,39 @@
                required
             />
             <input
+               class="form-control"
                id="lastName"
                type="text"
                placeholder="Last Name"
                name="lastname"
                required
             />
-            <input id="employeeID" type="text" placeholder="ID" required />
             <input
+               class="form-control"
+               id="employeeID"
+               type="text"
+               placeholder="ID"
+               required
+            />
+            <input
+               class="form-control"
                id="employeeTitle"
                type="text"
                placeholder="Title"
                required
             />
             <input
+               class="form-control"
                id="employeeSalary"
                type="text"
                placeholder="Annual Salary"
                required
             />
-            <button id="addButton" type="reset">Add Employee</button>
+            <button class="Btn-Primary" id="addButton" type="reset">
+               Add Employee
+            </button>
          </form>
-         <table>
+         <table class="table table-striped table-hover table-condensed">
             <thead>
                <tr>
                   <th>First Name</th>

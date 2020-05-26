@@ -137,7 +137,7 @@ function addRow() {
             element.employeeTitle +
             "</td><td>" +
             element.employeeSalary +
-            "</td><td id='myBtn'><button>Delete</button></td>"
+            "</td><td id='myBtn'><button class='Btn-Dark'>Delete</button></td>"
       );
       $("table tbody").append(rowElement);
 
